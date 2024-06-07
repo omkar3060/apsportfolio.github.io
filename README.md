@@ -10,13 +10,13 @@
 <dt>University</dt>
 <dd>KLE Technological University, Hubballi-31</dd>
 <dt>Course Instructor</dt>
-<dt>Prakash Hegade</dt>
+<dd>Prakash Hegade</dd>
 <dt>Portfolio Domain selected</dt>
-<dt>OLA</dt>
+<dd>OLA</dd>
 </dl>
 
 * * *
-A Stride Towards Enhanced Service Management on Ola
+A Step Towards Enhanced Service Management on Ola
 #### Note:
 This page hosts:
 
