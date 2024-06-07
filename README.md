@@ -26,7 +26,7 @@ OLA
 
 1. **Introduction**
 
-2. **Why OLA**
+2. **Need of Portfolio**
 
 3. **Objectives**
 
@@ -42,4 +42,10 @@ OLA
 
 The ever-evolving landscape of ride-hailing services necessitates continual improvements in service management and user experience. Ola, as a leading player in this industry, faces various operational challenges that can be addressed through the strategic application of data structures and algorithms. This portfolio is essential for several reasons. Firstly, optimizing service efficiency is crucial; efficient ride allocation and route planning can minimize wait times and maximize resource utilization. By exploring advanced algorithmic solutions, this portfolio aims to enhance these processes, resulting in a more streamlined and efficient service. Additionally, the transition from theoretical knowledge to practical application is a critical step in the learning process. This portfolio provides an opportunity to apply concepts learned in Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to real-world problems, thereby solidifying understanding and skills.
 
+## Objectives
 
+**1.** Apply theoretical concepts from Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to practical, real-world problems within the Ola platform.
+**2.** Address specific business challenges faced by Ola through the application of algorithmic problem-solving.
+**3.** Explore and implement algorithmic solutions that ensure streamlined and efficient services within Ola’s ecosystem.
+
+## Data Structures and Algorithms applicable
