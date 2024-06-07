@@ -45,7 +45,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ## Objectives
 
 **1.** Apply theoretical concepts from Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to practical, real-world problems within the Ola platform.
+
 **2.** Address specific business challenges faced by Ola through the application of algorithmic problem-solving.
+
 **3.** Explore and implement algorithmic solutions that ensure streamlined and efficient services within Ola’s ecosystem.
 
 ## Data Structures and Algorithms applicable
