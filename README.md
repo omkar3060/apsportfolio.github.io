@@ -6,13 +6,17 @@
 <dt>Course Code</dt>
 <dd>23ECSE309</dd>
 <dt>Name</dt>
-<dd>Omkargouda</dd>
+<dd>Omkargouda S Police Patil</dd>
 <dt>University</dt>
 <dd>KLE Technological University, Hubballi-31</dd>
+<dt>Course Instructor</dt>
+<dt>Prakash Hegade</dt>
+<dt>Portfolio Domain selected</dt>
+<dt>OLA</dt>
 </dl>
 
 * * *
-
+A Stride Towards Enhanced Service Management on Ola
 #### Note:
 This page hosts:
 
