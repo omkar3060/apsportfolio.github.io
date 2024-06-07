@@ -1,4 +1,4 @@
-# E-Commerce Portfolio
+# Ola Platform: A Comprehensive DSA Portfolio
 
 <dl>
 <dt>Course Name</dt>
