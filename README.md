@@ -81,4 +81,16 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 - **Driver-Passenger Matching**: By treating each ride request and available driver as tasks and agents, respectively, the Assignment Problem can be used to minimize the total cost, which is a combination of factors such as waiting time, travel distance, previously given ratings by the passenger to the driver and fuel consumption. The goal is to match each passenger with the most suitable driver.
 
-  
+### 3. **Longest Common Subsequence (LCS)** 
+
+- **Customer Feedback Analysis**: The LCS algorithm can be used to find common phrases or sentiments in customer feedback. By identifying the longest common subsequences in customer reviews, Ola can detect recurring issues or popular features or even spams, helping to enhance service quality and customer satisfaction.
+
+- **Driver Performance Monitoring**: The LCS algorithm can be applied to analyze historical trip data to find common routes taken by multiple drivers. By identifying these frequently traveled paths, Ola can optimize routing algorithms to suggest the most efficient routes, reducing travel time and fuel consumption.
+
+  ### 4. **Binary Search Tree (BST)**
+
+- **Efficiently Managing Driver and Ride Data**: BSTs can be used to manage data related to drivers and rides in a way that allows for quick insertions, deletions, and lookups. For instance, driver ratings, ride prices, and trip durations can be stored in BSTs to facilitate fast access and updates. This is particularly useful for operations that need sorted data.
+ 
+  ### 5. **Red-Black Trees**
+
+- **Efficient Operations**: Ride-hailing platforms experience high-frequency transactions, including new ride bookings, driver status updates, and user feedback submissions. Red-Black Trees allow for quick insertions and deletions while maintaining balance, ensuring that the indices remain efficient and up-to-date.
