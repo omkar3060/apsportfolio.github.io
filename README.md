@@ -1,4 +1,4 @@
-# Ola Platform: A Comprehensive DSA Portfolio
+# Ola Platform: A Comprehensive APS Portfolio
 
 <dl>
 <dt>Course Name</dt>
