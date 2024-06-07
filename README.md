@@ -17,12 +17,11 @@
 
 * * *
 A Step Towards Enhanced Service Management on Ola
-#### Note:
-This page hosts:
+* * *
+
+### This page hosts:
 
 1. Introduction
-2. Why Portfolio
+2. Why OLA
 3. Objectives
-4. Design
-5. Challenges
-6. To-Do
+4. Data Structures and Algorithms applicable
