@@ -67,5 +67,14 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Trie** data structure can be used for implementing autocomplete functionalities, especially when we need to manage and suggest a large number of strings, such as addresses or location names. In the context of Ola's ride-hailing platform, using a Trie can significantly enhance the user experience by providing quick and relevant suggestions as users type their pickup and drop-off locations. Tries can be more space-efficient than storing all strings separately, especially when there are many common prefixes. But they can still consume a significant amount of memory, especially if the dataset is very large and there are many unique strings. Also, in a dynamic environment where new addresses and locations are frequently added or updated, maintaining the Trie efficiently can be challenging. While there are challenges in terms of memory usage and implementation complexity, the benefits of speed and efficient prefix matching make Tries a suitable choice for this functionality.
 
-### 4  . **** 
+### 4. **Ride Reviews and Ratings**
+
+  **Segment Trees** can be used to manage and retrieve reviews based on their timestamps. Segment trees allow efficient querying of reviews within a specific time range, which is useful for displaying recent reviews and ratings first. But, Segment Trees require more memory, which can be significant for large datasets and insertion and deletion is costly as we need to recreate the whole tree. Despite of these disadvantages, Segment trees can be used for this usecase.
+
+### 5. **Cumulative Earnings and Real-Time Updates**
+
+  **Fenwick Trees/Binary Indexed Trees(BIT)** can be used for managing and querying cumulative earnings of drivers or total rides completed over time. This requires efficient prefix sum queries and point updates. Fenwick Trees are easier to implement and understand compared to Segment Trees. They require less space, typically using O(N) space compared O(4*N) in segment trees. But, Fenwick Trees are not well-suited for range updates; they can handle point updates efficiently but range updates are more complex and less efficient. They are limited in the types of range queries they can handle directly. They are primarily designed for prefix sums and cannot be easily adapted for other operations like min, max, or GCD without significant modifications. Despite of these disadvantages, Fenwick trees can be used for this usecase.
+
+
+
 
