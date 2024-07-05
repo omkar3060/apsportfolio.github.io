@@ -58,6 +58,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Bellman-Ford algorithm** can handle graphs with negative edge weights, making it suitable for scenarios where the cost of travel between locations can fluctuate and potentially be negative. It can be used to find the shortest path from a single source to all other nodes in smaller networks where negative weights are present. However, it has a time complexity of O(V * E), which is significantly higher than Dijkstra's for large graphs, making it less efficient for large-scale real-time applications(which is essentially what OLA is). Given the nature of Ola's ride-hailing platform, which requires real-time updates, efficient route planning, and dynamic adjustments in a large urban environment, Dijkstra's Algorithm is generally the most suitable choice.
 
+[Here is my code for Dijkstra's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/dijkstra.c){:target="_blank"}<br>
+[Here is my code for Bellman-Ford's algorithm algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/dijkstra.c){:target="_blank"}<br>
+
   
 ### 2. **Scheduling and Shift Management**
 
