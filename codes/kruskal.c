@@ -22,17 +22,20 @@ void insertionsort(struct node a[20],int n)
         a[i]=m;
     }
 }
+int root(int arr[],int i)
+{
+    while(i!=arr[i])
+    i=arr[i];
+    return i;
+}
 void union1(int arr[],int n,int u,int v)
 {
-    for(int i=0;i<n;i++)
-    {
-        if(arr[i]==arr[u])
-            arr[i]=arr[v];
-    }
+    int ru=root(arr,u),rv=root(arr,v);
+    arr[ru]=rv;
 }
 int find(int arr[9],int n,int u,int v)
 {
-    if(arr[u]==arr[v])
+    if(root(arr,u)==root(arr,v))
         return 1;
     return 0;
 }
@@ -56,8 +59,8 @@ void kruskals(struct node a[14],int n,int arr[9])
 }
 int main()
 {
-    struct node a[14]={{2,8,4},{6,7,2},{5,6,4},{0,1,8},{2,5,8},{6,8,12},{2,3,14},{7,8,14},{0,7,16},{1,2,16},{3,4,18},{4,5,20},{1,7,22},{3,5,28}};
-    int arr[9],n=9;
+    struct node a[14]={{0,3,6},{0,2,1},{0,4,8},{1,2,2},{1,5,8},{2,5,4},{3,5,3},{1,4,3}};
+    int arr[9],n=6;
     for(int i=0;i<n;i++)
     {
         arr[i]=i;
