@@ -141,7 +141,51 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
 
-[Here is my code for the Ford-Fulkserson algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/fordfulkerson.cpp){:target="_blank"}<br>
+[Here is my code for the Ford-Fulkerson algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/fordfulkerson.cpp){:target="_blank"}<br>
+  
+### 14. **Critical Routes Identification**
+
+  **Bridges** in a graph can be used to identify critical routes or roads in a city's transportation network. These routes are vital for maintaining connectivity between different areas. By identifying these bridges, Ola can ensure that these routes are well monitored to prevent disruptions in service.
+
+  **Limitations**: The transportation network is dynamic, with new roads being built and old ones being closed. Regular updates to the graph are necessary to maintain accurate bridge identification.
+
+[Here is my code for finding bridges in a graph](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bridge.cpp){:target="_blank"}<br>
+
+### 15. **Targeted Marketing**
+
+  By analyzing strongly connected components using algorithms like **Kosaraju's or Tarjan's**, we can analyze travel patterns to identify user clusters with similar preferences or behaviors, enabling targeted marketing campaigns and promotions. While both algorithms have similar time complexities, Tarjan's algorithm is generally preferred for its simplicity and single traversal requirement.
+
+[Here is my code for Kosaraju's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kosaraju.cpp){:target="_blank"}<br>
+[Here is my code for Tarjan's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/tarjan.cpp){:target="_blank"}<br>
+
+### 16. **User Authentication and Data Security**
+
+  **Hashing** algorithms can help in securely storing user passwords which helps to protects user passwords from being easily compromised. Even if the database is leaked, hashed passwords are difficult to reverse-engineer. Hashing is also used in encryption, digital signatures, and data integrity checks to secure sensitive information against unauthorized access.
+
+  **Limitations**: Many hashing algorithms are not collision-resistant and can be vulnerable to attacks, so stronger algorithms like SHA-512 are preferable.
+
+[Here is my code for a simple Hashing algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/hash.cpp){:target="_blank"}<br>
+
+### 17. **Search Indexing using BSTs**
+
+**Binary Search Trees (BSTs)** Binary Search Trees (BSTs) can be utilized in Ola's ride-hailing platform to efficiently store and retrieve indexed locations, such as popular pickup and drop-off points. By organizing these indexed locations in BSTs, Ola can quickly search for relevant locations based on user input or other search criteria, enabling fast and accurate retrieval of location suggestions. 
+
+**Limitations**: Standard BSTs can become unbalanced with skewed data, leading to inefficient search times. This can be mitigated by using self-balancing trees like **Red-Black Trees**.
+
+### 18. **User Preference Analysis**
+
+  Using **Longest Common Subsequence (LCS)**, we can analyzie user preferences by comparing the sequences of services or options they have chosen in the past. For example, if a user consistently prefers certain car types or services, LCS can help identify these preferences and tailor recommendations accordingly.
+
+  **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
+  - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
+
+
+
+
+
+  
+
+
 
 
 
