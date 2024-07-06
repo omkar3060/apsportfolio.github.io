@@ -121,5 +121,29 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 [Here is my code for kruskal's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kruskal.c){:target="_blank"}<br>
 [Here is my code for Segment trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/prim.cpp){:target="_blank"}<br>
 
+### 11. **Spell Checking for Location Inputs**
+
+  **Edit distance** algorithm can be used in Ola's ride-hailing platform to enhance spell-checking systems for location inputs. They help identify and correct misspelled pickup and drop-off locations by suggesting replacements with the minimum number of edits required.
+
+[Here is my code for Edit distance algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/edit_distance.cpp){:target="_blank"}<br>
+
+### 12. **Optimizing Multi-Passenger Ride Sharing**
+
+  The **Traveling Salesman Problem(TSP)** can be used to optimize routes for ride-sharing services where multiple passengers with different pickup and drop-off points share a single ride. As a result, we can determine the shortest route that covers all passengers' locations, minimizing travel time and fuel consumption.
+
+  **Limitations**: Real-time changes such as new ride requests or cancellations require re-solving the TSP, which can be computationally intensive as the algorithm's time complexit is O(n!).
+
+[Here is my code for the TSP](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/TSP.cpp){:target="_blank"}<br>
+
+### 13. **Managing Peak Demand and Load Balancing**
+
+  During peak hours, the **Ford-Fulkerson algorithm** can help manage and balance the load by optimizing the distribution of ride requests across available drivers. By ensuring that the flow of requests does not exceed the capacity of drivers, Ola can maintain service quality.
+
+  **Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
+
+[Here is my code for the Ford-Fulkserson algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/fordfulkerson.cpp){:target="_blank"}<br>
+
+
+
 
 
