@@ -179,8 +179,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
   - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
 
+### 19. **Database Indexing**
 
-
+  Red-Black Trees are ideal for indexing and organizing location data, such as pickup and drop-off points. They ensure balanced search trees, allowing for quick retrieval of locations based on various search criteria (e.g., proximity, popularity).
 
 
   
