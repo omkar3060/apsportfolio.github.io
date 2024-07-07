@@ -24,15 +24,16 @@ OLA
 
 ### This page hosts:
 
-1. **🚀Introduction**
 
-2. **❓Need of Portfolio**
+1. [**🚀Introduction**](#introduction)
 
-3. **🎯Objectives**
+2. [**❓Need of Portfolio**](#need-of-portfolio)
 
-4. **🛠️Business Use Cases**
+3. [**🎯Objectives**](#objectives)
 
-5. **🧠Learnings and Key Takeaways**
+4. [**🛠️Business Use Cases**](#business-use-cases)
+
+5. [**🧠Learnings and Key Takeaways**](#learnings-and-key-takeaways)
 
 ## 🚀Introduction
 
