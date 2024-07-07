@@ -71,10 +71,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 **Limitations**:  It has a time complexity of O(V * E), which is significantly higher than Dijkstra's for large graphs, making it less efficient for large-scale real-time applications(which is essentially what OLA is).
 
 **Design Techniques and Performance Analysis:**
-- **Dijkstra's Algorithm:** Greedy approach, Priority queue
+- **Dijkstra's Algorithm:** Greedy approach
   - Time Complexity: O((V + E) log V) where V is the number of vertices and E is the number of edges
   - Space Complexity: O(V) where V is the number of vertices<br>
-- **Bellman-Ford Algorithm:** Dynamic programming, Relaxation technique
+- **Bellman-Ford Algorithm:** Dynamic programming
   - Time Complexity: O(VE) where V is the number of vertices and E is the number of edges
   - Space Complexity: O(V) where V is the number of vertices<br>
 
@@ -87,6 +87,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   The **Assignment Problem** can be applied to create optimal schedules for drivers, ensuring that there are always enough drivers available to meet demand at different times of the day. We can assign drivers to shifts in a way that balances workload and minimizes idle time. We can create a cost matrix where rows represent drivers and columns represent shifts. Costs can be based on driver preferences, availability, and historical performance. The assignment problem can also be used for **Driver-Passenger Matching** by treating each ride request and available driver as tasks and agents, respectively. It can be used to minimize the total cost, which is a combination of factors such as waiting time, travel distance, previously given ratings by the passenger to the driver and fuel consumption. The goal is to match each passenger with the most suitable driver.
 
 **Limitations**: As the number of drivers increases, the size of the cost matrix grows, leading to increased computational complexity and drivers may have preferences or constraints (e.g., preferred areas, shift timings) that are difficult to model in a standard cost matrix.
+
+**Design Techniques and Performance Analysis:**
+- **Assignment Problem:** Optimization technique
+- Time Complexity: O(2<sup>N</sup> * N) where N is the number of tasks or resources
+- Space Complexity: O(N<sup>2</sup>) where N is the number of tasks or resources
 
 [Here is my code for Assignment problem](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/assignment_problem.cpp){:target="_blank"}<br>
 
@@ -102,6 +107,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   
 [Here is my code to insert and search a word in trie](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/trie.cpp){:target="_blank"}<br>
 
+**Design Techniques and Performance Analysis:**
+- **Tries:** Tree data structure, Prefix tree
+  - Time Complexity: O(L) for insertion, deletion, and lookup operations, where L is the length of the key
+  - Space Complexity: O(ALPHABET_SIZE * L) where ALPHABET_SIZE is the number of possible characters and L is the length of the key
+
 
 ### 4. **Ride Reviews and Ratings**
 
@@ -110,6 +120,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: Segment Trees require more memory, which can be significant for large datasets and insertion and deletion is costly as we need to recreate the whole tree. 
   
   Despite of these disadvantages, Segment trees can be used for this usecase.
+
+**Design Techniques and Performance Analysis:**
+- **Segment Trees:** Divide and conquer
+  - Time Complexity: O(log N) for both query and update operations, where N is the number of elements
+  - Space Complexity: O(N) where N is the number of elements
   
 [Here is my code for Segment trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/segment_tree.cpp){:target="_blank"}<br>
 
@@ -122,12 +137,22 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 - They are limited in the types of range queries they can handle directly. They are primarily designed for prefix sums and cannot be easily adapted for other operations like min, max, or GCD without significant modifications.
   
   Despite of these disadvantages, Fenwick trees can be used for this usecase.
+
+**Design Techniques and Performance Analysis:**
+- **BITs:** Divide and conquer
+  - Time Complexity: O(N log N) for construction,O(log N) for update and query operations where N is the number of elements
+  - Space Complexity: O(N)
   
 [Here is my code for Fenwick trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/BIT.cpp){:target="_blank"}<br>
 
 ### 6. **Driver Onboarding and Training Workflow**
 
   When a new driver joins Ola, there is a structured process they must follow, including background checks, vehicle inspections, training modules, and document verification. Each step must be completed before proceeding to the next. Each task can be represented as a node in a DAG, with edges indicating dependencies and **Topological sort** can be used as it will provide an ordered sequence of tasks for efficient onboarding.
+
+**Design Techniques and Performance Analysis:**
+- **Topological Sort:** Depth-first search (DFS)
+  - Time Complexity: O(V + E), where V is the number of vertices (tasks) and E is the number of edges (dependencies) in the DAG
+  - Space Complexity: O(V + E) for storing the graph and additional structures
   
 [Here is my code for Topological Sort](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/topo_sort.cpp){:target="_blank"}<br>
 
@@ -138,13 +163,22 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: Skip Lists require additional pointers for each level in the list, which increases memory usage compared to simpler data structures like arrays or linked lists.<br>
   - Also, the performance of Skip Lists depends on the randomization process used for balancing.<br>
   - While they offer good average-case performance (O(log n)), worst-case performance can still be linear in some scenarios.
+
+**Design Techniques and Performance Analysis:**
+- **Skip Lists:** Probabilistic balancing
+  - Time Complexity: O(log n) on average for search, insertion, and deletion, where n is the number of elements in the list
+  - Space Complexity: O(n), where n is the number of elements in the skip list
   
 [Here is my code for Skip Lists](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/skiplist.cpp){:target="_blank"}<br>
-
 
 ### 8. **Data Transmission**
 
   **Huffman Coding** can be used to compress ride data, such as ride logs, user reviews, and feedback. By encoding frequently occurring data with shorter bit lengths, Ola can reduce the storage requirements for their databases. Also, Compressing data before transmission between servers or to users’ devices can save bandwidth and **reduce transmission time**.
+
+**Design Techniques and Performance Analysis:**
+- **Huffman Coding:** Greedy approach
+  - Time Complexity: O(n log n) for building the Huffman tree, where n is the number of symbols
+  - Space Complexity: O(n) for storing the Huffman tree and encoded data
 
 [Here is my code for Huffman Coding](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/huffman_encoding.cpp){:target="_blank"}<br>
 
@@ -156,6 +190,14 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   
   **Breadth-First Search (BFS)** can also be used for finding the shortest path in an unweighted graph. When mapping out possible routes, BFS can quickly determine the shortest path from the pickup point to the drop-off location.
 
+**Design Techniques and Performance Analysis:**
+- **DFS:** Graph traversal based on stack
+  - Time Complexity: O(V + E), where V is the number of vertices (nodes) and E is the number of edges in the graph
+  - Space Complexity: O(V) 
+- **BFS:** Graph traversal based on queue
+  - Time Complexity: O(V + E), where V is the number of vertices (nodes) and E is the number of edges in the graph
+  - Space Complexity: O(V)
+
 [Here is my code for DFS](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/dfs.c){:target="_blank"}<br>
 [Here is my code for BFS](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bfs.c){:target="_blank"}<br>
 
@@ -165,12 +207,25 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   
   **Limitations**: These algorithms provide a static solution and might need additional heuristics to handle real-world complexities like varying demand and geographical constraints.
 
+- **Design Techniques and Performance Analysis**:
+  - **Kruskal's Algorithm**: Greedy approach
+  - Time Complexity: \(O(E log E)\)
+  - Space Complexity: \(O(V + E)\)<br>
+  - **Prim's Algorithm**: Greedy approach
+    - Time Complexity: \(O(E log V)\) with priority queues (or \(O(E + V log V)\) with Fibonacci heaps)
+    - Space Complexity: \(O(V + E)\)
+
 [Here is my code for kruskal's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kruskal.c){:target="_blank"}<br>
 [Here is my code for Segment trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/prim.cpp){:target="_blank"}<br>
 
 ### 11. **Spell Checking for Location Inputs**
 
   **Edit distance** algorithm can be used in Ola's ride-hailing platform to enhance spell-checking systems for location inputs. They help identify and correct misspelled pickup and drop-off locations by suggesting replacements with the minimum number of edits required.
+
+**Design Techniques and Performance Analysis:**
+- **Edit Distance:** Dynamic programming
+  - Time Complexity: O(m*n), where m and n are the lengths of the two strings being compared
+  - Space Complexity: O(m*n), where m and n are the lengths of the two strings being compared
 
 [Here is my code for Edit distance algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/edit_distance.cpp){:target="_blank"}<br>
 
@@ -180,6 +235,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Limitations**: Real-time changes such as new ride requests or cancellations require re-solving the TSP, which can be computationally intensive as the algorithm's time complexit is O(n!).
 
+**Design Techniques and Performance Analysis:**
+- **TSP**: Dynamic programming
+- Time Complexity: O(n!) where n is the number of vertices in the graph
+- Space Complexity: O(n) as we are using a vector to store all the vertices.
+
 [Here is my code for the TSP](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/TSP.cpp){:target="_blank"}<br>
 
 ### 13. **Managing Peak Demand and Load Balancing**
@@ -187,6 +247,13 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   During peak hours, the **Ford-Fulkerson algorithm** can help manage and balance the load by optimizing the distribution of ride requests across available drivers. By ensuring that the flow of requests does not exceed the capacity of drivers, Ola can maintain service quality.
 
   **Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
+
+**Design Techniques and Performance Analysis:**
+- **Ford-Fulkerson Algorithm:** Augmenting path method, Greedy approach
+  - Time Complexity: O(E * V<sup>2</sup>) where E is the number of edges and V is the number of vertices
+  - Space Complexity: O(V<sup>2</sup>) where V is the number of vertices<br>
+- **Dinic's Algorithm:** Layered network approach, Blocking flow<br>
+- **Karger's Algorithm:** Randomized contraction, Min-cut max-flow theorem<br>
 
 [Here is my code for the Ford-Fulkerson algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/fordfulkerson.cpp){:target="_blank"}<br>
   
@@ -196,11 +263,22 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Limitations**: The transportation network is dynamic, with new roads being built and old ones being closed. Regular updates to the graph are necessary to maintain accurate bridge identification.
 
+**Design Techniques and Performance Analysis**:
+  - **Bridges**: Based on modified DFS.
+  - Time Complexity: \(O(V + E)\)
+  - Space Complexity:\(O(V + E)\)
+
 [Here is my code for finding bridges in a graph](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bridge.cpp){:target="_blank"}<br>
 
 ### 15. **Targeted Marketing**
 
   By analyzing strongly connected components using algorithms like **Kosaraju's or Tarjan's**, we can analyze travel patterns to identify user clusters with similar preferences or behaviors, enabling targeted marketing campaigns and promotions. While both algorithms have similar time complexities, Tarjan's algorithm is generally preferred for its simplicity and single traversal requirement.
+
+- **Design Techniques and Performance Analysis**:
+  - **Kosaraju's Algorithm**: Two-phase DFS (original and transposed graph).
+  - **Tarjan's Algorithm**: Single DFS pass with backtracking.
+- Time Complexity: O(V + E)
+- Space Complexity: O(V)
 
 [Here is my code for Kosaraju's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kosaraju.cpp){:target="_blank"}<br>
 [Here is my code for Tarjan's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/tarjan.cpp){:target="_blank"}<br>
@@ -219,6 +297,14 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Limitations**: Standard BSTs can become unbalanced with skewed data, leading to inefficient search times. This can be mitigated by using self-balancing trees like **Red-Black Trees**.
 
+- **Design Techniques and Performance Analysis**:
+  - **Binary Search Trees**: Binary search algorithm, for efficient data retrieval.
+  - **Time Complexity**: \(O(\log n)\) on average for search, insertion, and deletion. \(O(n)\) in the worst-case scenario.
+  - **Space Complexity**: \(O(n)\)
+- **Red-Black Trees:** Balanced binary search tree
+  - Time Complexity: O(log N) for insertion, deletion, and lookup operations, where N is the number of elements
+  - Space Complexity: O(N) where N is the number of elements
+
 [Here is my code for BST](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bst.c){:target="_blank"}<br>
 [Here is my code for Red-Black tree](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/red_black_tree.c){:target="_blank"}<br>
 
@@ -229,11 +315,21 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
   - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
 
+- **Design Techniques and  Performance Analysis**:
+- **LCS**: Dynamic Programming
+- Time Complexity: \(O(m*n)\), where m and n are lengths of sequences.
+- Space Complexity: \(O(m*n)\) for storing the LCS table.
+
 [Here is my code for LCS algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/LCS.cpp){:target="_blank"}<br>
 
 ### 19. **Database Indexing**
 
   **Red-Black** Trees are ideal for indexing and organizing location data, such as pickup and drop-off points. They ensure balanced search trees, allowing for quick retrieval of locations based on various search criteria (e.g., proximity, popularity).
+  
+- **Design Techniques and  Performance Analysis**:
+- **Red-Black Trees:** Balanced binary search tree
+  - Time Complexity: O(log N) for insertion, deletion, and lookup operations, where N is the number of elements
+  - Space Complexity: O(N) where N is the number of elements
 
 [Here is my code for Red-Black tree](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/red_black_tree.c){:target="_blank"}<br>
 
