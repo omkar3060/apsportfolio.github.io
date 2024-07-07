@@ -63,6 +63,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 1. **Route Optimization**
 
   Shortest path algorithms like **Dijkstra's algorithm** can be used to compute the shortest path from a driver's current location to the passenger's pickup point and from there to the destination. This ensures that the driver takes the most efficient route, reducing travel time and fuel consumption. As traffic conditions change, Dijkstra's algorithm can be re-run to adjust routes dynamically. This helps in avoiding congested areas and finding the quickest path based on current traffic data. 
+
+  ![Dijkstra's Algorithm Animation](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww3.cs.stonybrook.edu%2F~skiena%2Fcombinatorica%2Fanimations%2Fdijkstra.html&psig=AOvVaw39H5ZQzsBi7LUHGo_h0R5O&ust=1720460215913000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKjth_C7lYcDFQAAAAAdAAAAABAQ)
   
 **Limitations**: Dijkstra's algorithm finds the shortest path from a single source to all other nodes, which can be limiting if multiple source-destination pairs need to be considered simultaneously. <br>
  - Also, Dijkstra's algorithm does not handle negative edge weights, making it unsuitable for scenarios where such weights might be necessary(e.g., discounts or incentives). 
