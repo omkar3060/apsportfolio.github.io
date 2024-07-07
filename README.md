@@ -26,7 +26,7 @@ OLA
 
 1. **🚀Introduction**
 
-2. **Need of Portfolio**
+2. **❓Need of Portfolio**
 
 3. **🎯Objectives**
 
@@ -40,11 +40,14 @@ OLA
 
   This portfolio showcases how algorithms can be applied within Ola’s ecosystem. Each use case illustrates how specific DSA principles can solve practical challenges faced by a ride-hailing service like Ola, bridging the gap between theory and application. Explore the use cases to see how DSA and Algorithmic Problem Solving techniques are used to enhance performance, reliability, and efficiency in a real-world context.
 
-## Need of Portfolio
+  ![image](https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98)
+
+
+## ❓Need of Portfolio
 
 The ever-evolving landscape of ride-hailing services necessitates continual improvements in service management and user experience. Ola, as a leading player in this industry, faces various operational challenges that can be addressed through the strategic application of data structures and algorithms. This portfolio is essential for several reasons. Firstly, optimizing service efficiency is crucial; efficient ride allocation and route planning can minimize wait times and maximize resource utilization. By exploring advanced algorithmic solutions, this portfolio aims to enhance these processes, resulting in a more streamlined and efficient service. Additionally, the transition from theoretical knowledge to practical application is a critical step in the learning process. This portfolio provides an opportunity to apply concepts learned in Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to real-world problems, thereby solidifying understanding and skills.
 
-## Objectives
+## 🎯Objectives
 
 **1.** Apply theoretical concepts learnt from Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to practical, real-world problems within the Ola platform.
 
@@ -52,7 +55,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **3.** Explore and implement algorithmic solutions that ensure streamlined and efficient services within Ola’s ecosystem.
 
-## Data Structures and Algorithms applicable
+## 🛠️Business Use Cases
 
 ### 1. **Route Optimization**
 
@@ -207,7 +210,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 [Here is my code for B+ trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/b+_tree.cpp){:target="_blank"}<br>
 
-## Learnings and Key Takeaways
+## 🧠Learnings and Key Takeaways
 
   This portfolio demonstrates how selecting appropriate data structures and algorithms can address specific business challenges across various domains. Each use case details the application of suitable algorithms, outlines the challenges, highlights the benefits, and emphasizes design techniques. It shows how algorithms learned in APS and DSA classes can be directly applied to practical problems and focuses on efficiency and practicality.
 
