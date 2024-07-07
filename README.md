@@ -32,6 +32,8 @@ OLA
 
 4. **Data Structures and Algorithms applicable**
 
+5. **Learnings and Key Takeaways**
+
 ## Introduction
 
   Ola is a leading ride-hailing service, providing a platform for booking rides conveniently and efficiently. In today’s day and age, the efficiency and effectiveness of ride-hailing services can be significantly enhanced through the strategic application of data structures and algorithms. This portfolio project delves into the core functionalities of Ola’s diverse services, applying the theoretical knowledge and practical skills acquired from the course Algorithmic Problem Solving (APS). By using advanced algorithmic techniques and data structures, this project aims to propose solutions to real-world business applications. From optimizing ride allocation algorithms for improved efficiency and speed to enhancing route planning for better accuracy and reduced travel time, the potential for enhancement is vast.
@@ -44,7 +46,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 ## Objectives
 
-**1.** Apply theoretical concepts from Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to practical, real-world problems within the Ola platform.
+**1.** Apply theoretical concepts learnt from Data Structures and Algorithms (DSA) and Algorithmic Problem Solving (APS) courses to practical, real-world problems within the Ola platform.
 
 **2.** Address specific business challenges faced by Ola through the application of algorithmic problem-solving.
 
@@ -172,6 +174,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Limitations**: Standard BSTs can become unbalanced with skewed data, leading to inefficient search times. This can be mitigated by using self-balancing trees like **Red-Black Trees**.
 
+[Here is my code for BST](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bst.c){:target="_blank"}<br>
+[Here is my code for Red-Black tree](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/red_black_tree.c){:target="_blank"}<br>
+
 ### 18. **User Preference Analysis**
 
   Using **Longest Common Subsequence (LCS)**, we can analyzie user preferences by comparing the sequences of services or options they have chosen in the past. For example, if a user consistently prefers certain car types or services, LCS can help identify these preferences and tailor recommendations accordingly.
@@ -179,9 +184,13 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
   - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
 
+[Here is my code for LCS algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/LCS.cpp){:target="_blank"}<br>
+
 ### 19. **Database Indexing**
 
   **Red-Black** Trees are ideal for indexing and organizing location data, such as pickup and drop-off points. They ensure balanced search trees, allowing for quick retrieval of locations based on various search criteria (e.g., proximity, popularity).
+
+[Here is my code for Red-Black tree](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/red_black_tree.c){:target="_blank"}<br>
 
 ### 20. **Location Caching**
 
@@ -190,10 +199,25 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: Bloom filters can return false positives, indicating that a location is in the cache when it is not. This can lead to occasional additional database queries.
   - Standard Bloom filters do not support deletion of elements, which means they cannot easily handle dynamic changes in the set of frequently searched locations.
 
+[Here is my code for Bloom filter](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bloom_filter.cpp){:target="_blank"}<br>
 
-### 20. **Efficient Data Management**
+### 21. **Efficient Data Management**
 
   Ola's ride-hailing platform can make use of **B+ tree** data structures for indexing and organizing vast amounts of data efficiently. B+ trees provide **logarithmic** time complexity for search, insertion, and deletion operations, making them ideal for handling structured data in a scalable and efficient manner.
+
+[Here is my code for B+ trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/b+_tree.cpp){:target="_blank"}<br>
+
+## Learnings and Key Takeaways
+
+  This portfolio demonstrates how selecting appropriate data structures and algorithms can address specific business challenges across various domains. Each use case details the application of suitable algorithms, outlines the challenges, highlights the benefits, and emphasizes design techniques. It shows how algorithms learned in APS and DSA classes can be directly applied to practical problems and focuses on efficiency and practicality.
+
+  By linking theory to practice, this portfolio provides insights into choosing the best solutions for real-world issues. It illustrates the significant impact that well-chosen algorithms and data structures can have on improving services and emphasizes the importance of understanding these concepts to drive innovation and efficiency.
+
+
+
+
+
+
 
 
   
