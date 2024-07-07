@@ -41,7 +41,7 @@ OLA
   This portfolio showcases how algorithms can be applied within Ola’s ecosystem. Each use case illustrates how specific DSA principles can solve practical challenges faced by a ride-hailing service like Ola, bridging the gap between theory and application. Explore the use cases to see how DSA and Algorithmic Problem Solving techniques are used to enhance performance, reliability, and efficiency in a real-world context.
 
 <div style="text-align: center;">
-  <img src="https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98" alt="Ola Ride-Hailing" style="width: 50%; height: 50%;" />
+  <img src="https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98" alt="Ola Ride-Hailing" style="width: 50%; height: 20px;" />
 </div>
 
 
