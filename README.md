@@ -207,13 +207,13 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   
   **Limitations**: These algorithms provide a static solution and might need additional heuristics to handle real-world complexities like varying demand and geographical constraints.
 
-- **Design Techniques and Performance Analysis**:
-  - **Kruskal's Algorithm**: Greedy approach
+**Design Techniques and Performance Analysis**:
+- **Kruskal's Algorithm**: Greedy approach
   - Time Complexity: \(O(E log E)\)
   - Space Complexity: \(O(V + E)\)<br>
-  - **Prim's Algorithm**: Greedy approach
-    - Time Complexity: \(O(E log V)\) with priority queues (or \(O(E + V log V)\) with Fibonacci heaps)
-    - Space Complexity: \(O(V + E)\)
+- **Prim's Algorithm**: Greedy approach
+  - Time Complexity: \(O(E log V)\) with priority queues (or \(O(E + V log V)\) with Fibonacci heaps)
+  - Space Complexity: \(O(V + E)\)
 
 [Here is my code for kruskal's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kruskal.c){:target="_blank"}<br>
 [Here is my code for Segment trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/prim.cpp){:target="_blank"}<br>
@@ -237,8 +237,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Design Techniques and Performance Analysis:**
 - **TSP**: Dynamic programming
-- Time Complexity: O(n!) where n is the number of vertices in the graph
-- Space Complexity: O(n) as we are using a vector to store all the vertices.
+  - Time Complexity: O(n!) where n is the number of vertices in the graph
+  - Space Complexity: O(n) as we are using a vector to store all the vertices.
 
 [Here is my code for the TSP](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/TSP.cpp){:target="_blank"}<br>
 
@@ -252,8 +252,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 - **Ford-Fulkerson Algorithm:** Augmenting path method, Greedy approach
   - Time Complexity: O(E * V<sup>2</sup>) where E is the number of edges and V is the number of vertices
   - Space Complexity: O(V<sup>2</sup>) where V is the number of vertices<br>
-- **Dinic's Algorithm:** Layered network approach, Blocking flow<br>
-- **Karger's Algorithm:** Randomized contraction, Min-cut max-flow theorem<br>
+
 
 [Here is my code for the Ford-Fulkerson algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/fordfulkerson.cpp){:target="_blank"}<br>
   
@@ -265,8 +264,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Design Techniques and Performance Analysis**:
   - **Bridges**: Based on modified DFS.
-  - Time Complexity: \(O(V + E)\)
-  - Space Complexity:\(O(V + E)\)
+    - Time Complexity: \(O(V + E)\)
+    - Space Complexity:\(O(V + E)\)
 
 [Here is my code for finding bridges in a graph](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bridge.cpp){:target="_blank"}<br>
 
@@ -274,11 +273,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   By analyzing strongly connected components using algorithms like **Kosaraju's or Tarjan's**, we can analyze travel patterns to identify user clusters with similar preferences or behaviors, enabling targeted marketing campaigns and promotions. While both algorithms have similar time complexities, Tarjan's algorithm is generally preferred for its simplicity and single traversal requirement.
 
-- **Design Techniques and Performance Analysis**:
-  - **Kosaraju's Algorithm**: Two-phase DFS (original and transposed graph).
-  - **Tarjan's Algorithm**: Single DFS pass with backtracking.
-- Time Complexity: O(V + E)
-- Space Complexity: O(V)
+**Design Techniques and Performance Analysis**:
+- **Kosaraju's Algorithm**: Two-phase DFS (original and transposed graph).
+- **Tarjan's Algorithm**: Single DFS pass with backtracking.
+  - Time Complexity: O(V + E)
+  - Space Complexity: O(V)
 
 [Here is my code for Kosaraju's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/kosaraju.cpp){:target="_blank"}<br>
 [Here is my code for Tarjan's algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/tarjan.cpp){:target="_blank"}<br>
@@ -297,8 +296,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Limitations**: Standard BSTs can become unbalanced with skewed data, leading to inefficient search times. This can be mitigated by using self-balancing trees like **Red-Black Trees**.
 
-- **Design Techniques and Performance Analysis**:
-  - **Binary Search Trees**: Binary search algorithm, for efficient data retrieval.
+**Design Techniques and Performance Analysis**:
+- **Binary Search Trees**: Binary search algorithm, for efficient data retrieval.
   - **Time Complexity**: \(O(\log n)\) on average for search, insertion, and deletion. \(O(n)\) in the worst-case scenario.
   - **Space Complexity**: \(O(n)\)
 - **Red-Black Trees:** Balanced binary search tree
@@ -315,10 +314,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
   - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
 
-- **Design Techniques and  Performance Analysis**:
+**Design Techniques and  Performance Analysis**:
 - **LCS**: Dynamic Programming
-- Time Complexity: \(O(m*n)\), where m and n are lengths of sequences.
-- Space Complexity: \(O(m*n)\) for storing the LCS table.
+  - Time Complexity: \(O(m*n)\), where m and n are lengths of sequences.
+  - Space Complexity: \(O(m*n)\) for storing the LCS table.
 
 [Here is my code for LCS algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/LCS.cpp){:target="_blank"}<br>
 
@@ -326,7 +325,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Red-Black** Trees are ideal for indexing and organizing location data, such as pickup and drop-off points. They ensure balanced search trees, allowing for quick retrieval of locations based on various search criteria (e.g., proximity, popularity).
   
-- **Design Techniques and  Performance Analysis**:
+**Design Techniques and  Performance Analysis**:
 - **Red-Black Trees:** Balanced binary search tree
   - Time Complexity: O(log N) for insertion, deletion, and lookup operations, where N is the number of elements
   - Space Complexity: O(N) where N is the number of elements
