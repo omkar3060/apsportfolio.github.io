@@ -1,4 +1,4 @@
-# Ola Platform: A Comprehensive APS Portfolio
+# A Comprehensive APS Portfolio on Ola Platform
 
 **Course Name**  
 Algorithmic Problem Solving
@@ -97,6 +97,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Assignment Problem** can be applied to create optimal schedules for drivers, ensuring that there are always enough drivers available to meet demand at different times of the day. We can assign drivers to shifts in a way that balances workload and minimizes idle time. We can create a cost matrix where rows represent drivers and columns represent shifts. Costs can be based on driver preferences, availability, and historical performance. The assignment problem can also be used for **Driver-Passenger Matching** by treating each ride request and available driver as tasks and agents, respectively. It can be used to minimize the total cost, which is a combination of factors such as waiting time, travel distance, previously given ratings by the passenger to the driver and fuel consumption. The goal is to match each passenger with the most suitable driver.
 
+**Market benefits** : Optimizing driver schedules ensures that resources are used efficiently and efficient driver-passenger matching reduces waiting times and travel distances, leading to higher customer satisfaction and better service ratings.
+
 **Limitations**: As the number of drivers increases, the size of the cost matrix grows, leading to increased computational complexity and drivers may have preferences or constraints (e.g., preferred areas, shift timings) that are difficult to model in a standard cost matrix.
 
 **Design Techniques and Performance Analysis:**
@@ -109,6 +111,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 3. **Autocomplete for Pickup and Drop Locations** 
 
   The **Trie** data structure can be used for implementing autocomplete functionalities, especially when we need to manage and suggest a large number of strings, such as addresses or location names. In the context of Ola's ride-hailing platform, using a Trie can significantly enhance the user experience by providing quick and relevant suggestions as users type their pickup and drop-off locations. Tries can be more space-efficient than storing all strings separately, especially when there are many common prefixes. 
+
+**Market benefits** : Accurate autocomplete suggestions improve user satisfaction.
   
   **Limitations**: Tries can still consume a significant amount of memory, especially if the dataset is very large and there are many unique strings. Also, in a dynamic environment where new addresses and locations are frequently added or updated, maintaining the Trie efficiently can be challenging. 
   
@@ -127,6 +131,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 4. **Ride Reviews and Ratings**
 
   **Segment Trees** can be used to manage and retrieve reviews based on their timestamps. Segment trees allow efficient querying of reviews within a specific time range, which is useful for displaying recent reviews and ratings first. 
+
+**Market Benefits:** Faster response to queries.
   
   **Limitations**: Segment Trees require more memory, which can be significant for large datasets and insertion and deletion is costly as we need to recreate the whole tree. 
   
@@ -143,6 +149,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 5. **Cumulative Earnings and Real-Time Updates**
 
   **Fenwick Trees/Binary Indexed Trees(BIT)** can be used for managing and querying cumulative earnings of drivers or total rides completed over time. This requires efficient prefix sum queries and point updates. Fenwick Trees are easier to implement and understand compared to Segment Trees. They require less space, typically using O(N) space compared O(4*N) in segment trees. 
+
+**Market Benefits:** Quick updates and queries on ride data enhance the operational efficiency of the platform.
   
 **Limitations**: Fenwick Trees are not well-suited for range updates; they can handle point updates efficiently but range updates are more complex and less efficient.<br> 
 - They are limited in the types of range queries they can handle directly. They are primarily designed for prefix sums and cannot be easily adapted for other operations like min, max, or GCD without significant modifications.
@@ -160,6 +168,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   When a new driver joins Ola, there is a structured process they must follow, including background checks, vehicle inspections, training modules, and document verification. Each step must be completed before proceeding to the next. Each task can be represented as a node in a DAG, with edges indicating dependencies and **Topological sort** can be used as it will provide an ordered sequence of tasks for efficient onboarding.
 
+**Market Benefits**: Ensure that drivers are well-prepared so that there is better service quality and higher customer satisfaction.
+
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/anim.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
@@ -174,6 +184,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 7. **Ride History and User Data**
 
   **Skip Lists** can be used to store and access user ride history and other personal data sorted by timestamps. This allows for efficient querying of historical rides within a certain time range or retrieving the most recent rides quickly. This improves the responsiveness of the application, providing users with a seamless experience when viewing their ride history or account details. 
+
+**Market Benefits**: Efficient access to ride history and personal data ensures a smooth and responsive user experience.
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/800px-Skip_list_add_element-en.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
@@ -194,6 +206,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Huffman Coding** can be used to compress ride data, such as ride logs, user reviews, and feedback. By encoding frequently occurring data with shorter bit lengths, Ola can reduce the storage requirements for their databases. Also, Compressing data before transmission between servers or to users’ devices can save bandwidth and **reduce transmission time**.
 
+**Market Benefits**: Faster data transmission and reduced storage space improve overall system performance.
+
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/Huffman_huff_demo.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
@@ -212,6 +226,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   **Limitations**: DFS does not always find the shortest or most efficient path, especially in large, complex networks. Shortest path algorithms can be used to do the same.
   
   **Breadth-First Search (BFS)** can also be used for finding the shortest path in an unweighted graph. When mapping out possible routes, BFS can quickly determine the shortest path from the pickup point to the drop-off location.
+
+ **Market Benefits**: Increased user engagement, and enhanced user experience.
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_GT9oSo0agIeIj6nTg3jFEA.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
@@ -236,6 +252,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/kruskal.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
 
+**Market Benefits**: Reduces capital expenditur and ensures optimal use of resources.
+
   **Limitations**: These algorithms provide a static solution and might need additional heuristics to handle real-world complexities like varying demand and geographical constraints.
 
 **Design Techniques and Performance Analysis**:
@@ -253,6 +271,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Edit distance** algorithm can be used in Ola's ride-hailing platform to enhance spell-checking systems for location inputs. They help identify and correct misspelled pickup and drop-off locations by suggesting replacements with the minimum number of edits required.
 
+**Market Benefits**: Improved User Experience
+
 **Design Techniques and Performance Analysis:**
 - **Edit Distance:** Dynamic programming
   - Time Complexity: O(m*n), where m and n are the lengths of the two strings being compared
@@ -268,7 +288,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/UZrVqj.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
 
-  **Limitations**: Real-time changes such as new ride requests or cancellations require re-solving the TSP, which can be computationally intensive as the algorithm's time complexit is O(n!).
+**Market Benefits**: Optimizing routes reduces fuel consumption and vehicle wear and tear. This leads to significant cost savings and also enhances user experience.
+
+**Limitations**: Real-time changes such as new ride requests or cancellations require re-solving the TSP, which can be computationally intensive as the algorithm's time complexit is O(n!).
 
 **Design Techniques and Performance Analysis:**
 - **TSP**: Dynamic programming
@@ -285,7 +307,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/FordFulkerson.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
 
-  **Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
+**Market Benefits**: Improved Service Quality and customer retention.
+
+**Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
 
 **Design Techniques and Performance Analysis:**
 - **Ford-Fulkerson Algorithm:** Augmenting path method, Greedy approach
@@ -299,9 +323,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Bridges** in a graph can be used to identify critical routes or roads in a city's transportation network. These routes are vital for maintaining connectivity between different areas. By identifying these bridges, Ola can ensure that these routes are well monitored to prevent disruptions in service.
 
+**Market Benefits**: Reduces the risk of service disruptions thereby leading to more reliable transportation for users.
+
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/screenshot-62-5893.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
-</p>  
+</p> 
 
   **Limitations**: The transportation network is dynamic, with new roads being built and old ones being closed. Regular updates to the graph are necessary to maintain accurate bridge identification.
 
@@ -314,7 +340,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 ### 15. **Targeted Marketing**
 
-  By analyzing strongly connected components using algorithms like **Kosaraju's or Tarjan's**, we can analyze travel patterns to identify user clusters with similar preferences or behaviors, enabling targeted marketing campaigns and promotions. While both algorithms have similar time complexities, Tarjan's algorithm is generally preferred for its simplicity and single traversal requirement.
+  By analyzing strongly connected components using algorithms like **Kosaraju's and Tarjan's**, we can analyze travel patterns to identify user clusters with similar preferences or behaviors, enabling targeted marketing campaigns and promotions. While both algorithms have similar time complexities, Tarjan's algorithm is generally preferred for its simplicity and single traversal requirement.
+
+**Market Benefits**: Enhancing user engagement and satisfaction. Also helps in increasing the revenue generated.
 
 **Design Techniques and Performance Analysis**:
 - **Kosaraju's Algorithm**: Two-phase DFS (original and transposed graph).
@@ -329,6 +357,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Hashing** algorithms can help in securely storing user passwords which helps to protects user passwords from being easily compromised. Even if the database is leaked, hashed passwords are difficult to reverse-engineer. Hashing is also used in encryption, digital signatures, and data integrity checks to secure sensitive information against unauthorized access.
 
+**Market Benefits**: Enhanced Security
+
   **Limitations**: Many hashing algorithms are not collision-resistant and can be vulnerable to attacks, so stronger algorithms like SHA-512 are preferable.
 
 [Here is my code for a simple Hashing algorithm](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/hash.cpp){:target="_blank"}<br>
@@ -336,6 +366,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 17. **Search Indexing using BSTs**
 
 **Binary Search Trees (BSTs)** Binary Search Trees (BSTs) can be utilized in Ola's ride-hailing platform to efficiently store and retrieve indexed locations, such as popular pickup and drop-off points. By organizing these indexed locations in BSTs, Ola can quickly search for relevant locations based on user input or other search criteria, enabling fast and accurate retrieval of location suggestions. 
+
+**Market Benefits**: Efficient searching and retrieval operations helps in reducing the time required to fetch location data.
 
 **Limitations**: Standard BSTs can become unbalanced with skewed data, leading to inefficient search times. This can be mitigated by using self-balancing trees like **Red-Black Trees**.
 
@@ -354,7 +386,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   Using **Longest Common Subsequence (LCS)**, we can analyzie user preferences by comparing the sequences of services or options they have chosen in the past. For example, if a user consistently prefers certain car types or services, LCS can help identify these preferences and tailor recommendations accordingly.
 
-  **Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
+**Market Benefits**: Analyzing user preferences with LCS allows Ola to offer personalized recommendations for services and options thereby enhancing user satisfaction and loyalty.
+
+**Limitations**: LCS is useful for identifying patterns in sequential data but may not be as effective for non-sequential or more complex data relationships.
   - LCS has a time complexity of O(m*n), where m and n are the lengths of the sequences. For large datasets, this can become computationally intensive.
 
 **Design Techniques and  Performance Analysis**:
@@ -367,6 +401,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 19. **Database Indexing**
 
   **Red-Black** Trees are ideal for indexing and organizing location data, such as pickup and drop-off points. They ensure balanced search trees, allowing for quick retrieval of locations based on various search criteria (e.g., proximity, popularity).
+
+**Market Benefits**: Optimized database operations and Query Processing.
   
 **Design Techniques and  Performance Analysis**:
 - **Red-Black Trees:** Balanced binary search tree
@@ -378,6 +414,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 20. **Location Caching**
 
   **Bloom filters** can be used to cache frequently searched locations, allowing the system to quickly determine if a location is popular without querying the main database and give recommendations to users based on that.
+
+**Market Benefits**: Improved Response Time and Reduced Database Load.
 
   **Limitations**: Bloom filters can return false positives, indicating that a location is in the cache when it is not. This can lead to occasional additional database queries.
   - Standard Bloom filters do not support deletion of elements, which means they cannot easily handle dynamic changes in the set of frequently searched locations.
@@ -391,6 +429,8 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 21. **Efficient Data Management**
 
   Ola's ride-hailing platform can make use of **B+ tree** data structures for indexing and organizing vast amounts of data efficiently. B+ trees provide **logarithmic** time complexity for search, insertion, and deletion operations, making them ideal for handling structured data in a scalable and efficient manner.
+
+**Market Benefits**: Optimized Performance
 
 [Here is my code for B+ trees](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/b+_tree.cpp){:target="_blank"}<br>
 
