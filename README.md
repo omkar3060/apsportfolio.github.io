@@ -233,7 +233,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   For planning the expansion of Ola’s service areas, **Spanning Tree algorithms** such as **Kruskal's** and **Prim's** can help identify the most cost-effective way to connect new service zones to the existing network. By finding the MST, Ola can minimize the infrastructure costs required to expand services. 
 
 <p align="center">
-  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/kruskal.png" style="width: 400px; height: auto;"  alt="OLA">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/kruskal.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
 </p>  
 
   **Limitations**: These algorithms provide a static solution and might need additional heuristics to handle real-world complexities like varying demand and geographical constraints.
@@ -264,6 +264,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Traveling Salesman Problem(TSP)** can be used to optimize routes for ride-sharing services where multiple passengers with different pickup and drop-off points share a single ride. As a result, we can determine the shortest route that covers all passengers' locations, minimizing travel time and fuel consumption.
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/UZrVqj.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
   **Limitations**: Real-time changes such as new ride requests or cancellations require re-solving the TSP, which can be computationally intensive as the algorithm's time complexit is O(n!).
 
 **Design Techniques and Performance Analysis:**
@@ -276,6 +280,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 13. **Managing Peak Demand and Load Balancing**
 
   During peak hours, the **Ford-Fulkerson algorithm** can help manage and balance the load by optimizing the distribution of ride requests across available drivers. By ensuring that the flow of requests does not exceed the capacity of drivers, Ola can maintain service quality.
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/FordFulkerson.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
 
   **Limitations**: Managing vast network traffic, and minimizing congestion can be quite challenging.
 
@@ -290,6 +298,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 14. **Critical Routes Identification**
 
   **Bridges** in a graph can be used to identify critical routes or roads in a city's transportation network. These routes are vital for maintaining connectivity between different areas. By identifying these bridges, Ola can ensure that these routes are well monitored to prevent disruptions in service.
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/screenshot-62-5893.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
 
   **Limitations**: The transportation network is dynamic, with new roads being built and old ones being closed. Regular updates to the graph are necessary to maintain accurate bridge identification.
 
@@ -369,6 +381,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Limitations**: Bloom filters can return false positives, indicating that a location is in the cache when it is not. This can lead to occasional additional database queries.
   - Standard Bloom filters do not support deletion of elements, which means they cannot easily handle dynamic changes in the set of frequently searched locations.
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_l4PzubjhoUxhzTTzHaDB-g.jpg?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
 
 [Here is my code for Bloom filter](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bloom_filter.cpp){:target="_blank"}<br>
 
