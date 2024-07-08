@@ -43,7 +43,7 @@ OLA
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98" alt="Ola Ride-Hailing" style="width: 50%; height: 240px;" />
+  <img src="https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98" alt="Ola Ride-Hailing" style="width: 50%; height: 320px;" />
   <br>
   [1]
   <br>
@@ -401,7 +401,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 **Design Techniques and Performance Analysis**:
 - **Binary Search Trees**: Binary search algorithm, for efficient data retrieval.
-  - **Time Complexity**: \(O(\log n)\) on average for search, insertion, and deletion. \(O(n)\) in the worst-case scenario.
+  - **Time Complexity**: \(O(log n)\) on average for search, insertion, and deletion. \(O(n)\) in the worst-case scenario.
   - **Space Complexity**: \(O(n)\)
 - **Red-Black Trees:** Balanced binary search tree
   - Time Complexity: O(log N) for insertion, deletion, and lookup operations, where N is the number of elements
