@@ -73,10 +73,13 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Bellman-Ford algorithm** can handle graphs with negative edge weights, making it suitable for scenarios where the cost of travel between locations can fluctuate and potentially be negative. It can be used to find the shortest path from a single source to all other nodes in smaller networks where negative weights are present. Given the nature of Ola's ride-hailing platform, which requires real-time updates, efficient route planning, and dynamic adjustments in a large urban environment, Dijkstra's Algorithm is generally the most suitable choice.
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/bellman-ford-shortest-path-example.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
 **Limitations**:  It has a time complexity of O(V * E), which is significantly higher than Dijkstra's for large graphs, making it less efficient for large-scale real-time applications(which is essentially what OLA is).
 
 **Market benefits(of both algorithms)**: Optimizing routes helps in reducing fuel consumption and vehicle wear and tear, leading to lower operational costs.
-
 
 **Design Techniques and Performance Analysis:**
 - **Dijkstra's Algorithm:** Greedy approach
@@ -157,6 +160,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   When a new driver joins Ola, there is a structured process they must follow, including background checks, vehicle inspections, training modules, and document verification. Each step must be completed before proceeding to the next. Each task can be represented as a node in a DAG, with edges indicating dependencies and **Topological sort** can be used as it will provide an ordered sequence of tasks for efficient onboarding.
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/anim.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
 **Design Techniques and Performance Analysis:**
 - **Topological Sort:** Depth-first search (DFS)
   - Time Complexity: O(V + E), where V is the number of vertices (tasks) and E is the number of edges (dependencies) in the DAG
@@ -167,6 +174,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 7. **Ride History and User Data**
 
   **Skip Lists** can be used to store and access user ride history and other personal data sorted by timestamps. This allows for efficient querying of historical rides within a certain time range or retrieving the most recent rides quickly. This improves the responsiveness of the application, providing users with a seamless experience when viewing their ride history or account details. 
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/800px-Skip_list_add_element-en.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
 
   **Limitations**: Skip Lists require additional pointers for each level in the list, which increases memory usage compared to simpler data structures like arrays or linked lists.<br>
   - Also, the performance of Skip Lists depends on the randomization process used for balancing.<br>
@@ -183,6 +194,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   **Huffman Coding** can be used to compress ride data, such as ride logs, user reviews, and feedback. By encoding frequently occurring data with shorter bit lengths, Ola can reduce the storage requirements for their databases. Also, Compressing data before transmission between servers or to users’ devices can save bandwidth and **reduce transmission time**.
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/Huffman_huff_demo.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
 **Design Techniques and Performance Analysis:**
 - **Huffman Coding:** Greedy approach
   - Time Complexity: O(n log n) for building the Huffman tree, where n is the number of symbols
@@ -198,6 +213,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   
   **Breadth-First Search (BFS)** can also be used for finding the shortest path in an unweighted graph. When mapping out possible routes, BFS can quickly determine the shortest path from the pickup point to the drop-off location.
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_GT9oSo0agIeIj6nTg3jFEA.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
 **Design Techniques and Performance Analysis:**
 - **DFS:** Graph traversal based on stack
   - Time Complexity: O(V + E), where V is the number of vertices (nodes) and E is the number of edges in the graph
@@ -212,7 +231,11 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 10. **Infrastructure Planning and Network Expansion**
 
   For planning the expansion of Ola’s service areas, **Spanning Tree algorithms** such as **Kruskal's** and **Prim's** can help identify the most cost-effective way to connect new service zones to the existing network. By finding the MST, Ola can minimize the infrastructure costs required to expand services. 
-  
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/kruskal.png" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
+
   **Limitations**: These algorithms provide a static solution and might need additional heuristics to handle real-world complexities like varying demand and geographical constraints.
 
 **Design Techniques and Performance Analysis**:
