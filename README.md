@@ -41,9 +41,6 @@ OLA
 
   This portfolio showcases how algorithms can be applied within Ola’s ecosystem. Each use case illustrates how specific DSA principles can solve practical challenges faced by a ride-hailing service like Ola, bridging the gap between theory and application. Explore the use cases to see how DSA and Algorithmic Problem Solving techniques are used to enhance performance, reliability, and efficiency in a real-world context.
 
-<p align="center">
-  <img src="(https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/dijkstra.gif)" style="width: 400px; height: auto;"  alt="OLA">
-</p>
 
 
 ## ❓Need of Portfolio
@@ -64,9 +61,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   Shortest path algorithms like **Dijkstra's algorithm** can be used to compute the shortest path from a driver's current location to the passenger's pickup point and from there to the destination. This ensures that the driver takes the most efficient route, reducing travel time and fuel consumption. As traffic conditions change, Dijkstra's algorithm can be re-run to adjust routes dynamically. This helps in avoiding congested areas and finding the quickest path based on current traffic data. 
 
-<div style="text-align: center;">
-  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/dijkstra.gif?raw=true" alt="Dijkstra's Algorithm Animation" style="width: 50%; height: 240px;" />
-</div>  
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/dijkstra.gif" style="width: 400px; height: auto;"  alt="OLA">
+</p>  
   
 **Limitations**: Dijkstra's algorithm finds the shortest path from a single source to all other nodes, which can be limiting if multiple source-destination pairs need to be considered simultaneously. <br>
  - Also, Dijkstra's algorithm does not handle negative edge weights, making it unsuitable for scenarios where such weights might be necessary(e.g., discounts or incentives). 
