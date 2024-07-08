@@ -184,7 +184,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 **Market Benefits**: Ensure that drivers are well-prepared so that there is better service quality and higher customer satisfaction.
 
 <p align="center">
-  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/anim.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/anim.gif?raw=true" style="width: 400px; height: 300px;"  alt="OLA">
   <br>[4]<br>
 </p>  
 
