@@ -69,6 +69,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/dijkstra.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+   <br>
+  [2]
+  <br>
 </p>  
   
 **Limitations**: Dijkstra's algorithm finds the shortest path from a single source to all other nodes, which can be limiting if multiple source-destination pairs need to be considered simultaneously. <br>
@@ -78,6 +81,9 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/bellman-ford-shortest-path-example.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+<br>
+  [3]
+  <br>
 </p>  
 
 **Limitations**:  It has a time complexity of O(V * E), which is significantly higher than Dijkstra's for large graphs, making it less efficient for large-scale real-time applications(which is essentially what OLA is).
@@ -447,7 +453,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 [1] Vedant Thakur, "Ola Electric Partners With BYPL And BRPL To Expand Its Network Of Charging Stations In New Delhi", Motoroids, https://www.motoroids.com/news/ola-electric-partners-with-bypl-and-brpl-to-expand-its-network-of-charging-stations-in-new-delhi/
 
-[2] 
+[2] Thaddeus Abiy, Hannah Pang, Christopher Williams, "Dijkstra's Shortest Path Algorithm", Brilliant, https://brilliant.org/wiki/dijkstras-short-path-finder/
+
+[3] Saurabh Kumar, "Bellman-Ford Algorithm", Ideserve, https://brilliant.org/wiki/dijkstras-short-path-finder/
+
 
 
 
