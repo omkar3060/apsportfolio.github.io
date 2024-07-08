@@ -121,6 +121,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
   The **Trie** data structure can be used for implementing autocomplete functionalities, especially when we need to manage and suggest a large number of strings, such as addresses or location names. In the context of Ola's ride-hailing platform, using a Trie can significantly enhance the user experience by providing quick and relevant suggestions as users type their pickup and drop-off locations. Tries can be more space-efficient than storing all strings separately, especially when there are many common prefixes. 
 
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/trie.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p> 
+
 **Market benefits** : Accurate autocomplete suggestions improve user satisfaction.
   
   **Limitations**: Tries can still consume a significant amount of memory, especially if the dataset is very large and there are many unique strings. Also, in a dynamic environment where new addresses and locations are frequently added or updated, maintaining the Trie efficiently can be challenging. 
@@ -242,8 +246,13 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
  **Market Benefits**: Increased user engagement, and enhanced user experience.
 
 <p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/DFS.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br><br>
+</p> 
+
+<p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_GT9oSo0agIeIj6nTg3jFEA.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
-  <br>[7]<br>
+  <br>[7]Comparison between DFS AND BFS<br>
 </p>  
 
 **Design Techniques and Performance Analysis:**
@@ -381,6 +390,10 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 ### 17. **Search Indexing using BSTs**
 
 **Binary Search Trees (BSTs)** Binary Search Trees (BSTs) can be utilized in Ola's ride-hailing platform to efficiently store and retrieve indexed locations, such as popular pickup and drop-off points. By organizing these indexed locations in BSTs, Ola can quickly search for relevant locations based on user input or other search criteria, enabling fast and accurate retrieval of location suggestions. 
+
+<p align="center">
+  <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/bst.png?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+</p>
 
 **Market Benefits**: Efficient searching and retrieval operations helps in reducing the time required to fetch location data.
 
