@@ -44,6 +44,9 @@ OLA
 
 <div style="text-align: center;">
   <img src="https://github.com/omkar3060/omkar3060.github.io/assets/153345475/ca072089-bfed-42a2-9ba2-b893015afd98" alt="Ola Ride-Hailing" style="width: 50%; height: 240px;" />
+  <br>
+  [1]
+  <br>
 </div>
 
 ## ❓Need of Portfolio
@@ -439,6 +442,12 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
   This portfolio demonstrates how selecting appropriate data structures and algorithms can address specific business challenges across various domains. Each use case details the application of suitable algorithms, outlines the challenges, highlights the benefits, and emphasizes design techniques. It shows how algorithms learned in APS and DSA classes can be directly applied to practical problems and focuses on efficiency and practicality.
 
   By linking theory to practice, this portfolio provides insights into choosing the best solutions for real-world issues. It illustrates the significant impact that well-chosen algorithms and data structures can have on improving services and emphasizes the importance of understanding these concepts to drive innovation and efficiency.
+
+## References
+
+[1] Vedant Thakur, "Ola Electric Partners With BYPL And BRPL To Expand Its Network Of Charging Stations In New Delhi", Motoroids, https://www.motoroids.com/news/ola-electric-partners-with-bypl-and-brpl-to-expand-its-network-of-charging-stations-in-new-delhi/
+
+[2] 
 
 
 
