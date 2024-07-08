@@ -181,6 +181,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/anim.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[4]<br>
 </p>  
 
 **Design Techniques and Performance Analysis:**
@@ -198,6 +199,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/800px-Skip_list_add_element-en.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[5]<br>
 </p>  
 
   **Limitations**: Skip Lists require additional pointers for each level in the list, which increases memory usage compared to simpler data structures like arrays or linked lists.<br>
@@ -219,6 +221,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/Huffman_huff_demo.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[6]<br>
 </p>  
 
 **Design Techniques and Performance Analysis:**
@@ -240,6 +243,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_GT9oSo0agIeIj6nTg3jFEA.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[7]<br>
 </p>  
 
 **Design Techniques and Performance Analysis:**
@@ -295,6 +299,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/UZrVqj.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[8]<br>
 </p>  
 
 **Market Benefits**: Optimizing routes reduces fuel consumption and vehicle wear and tear. This leads to significant cost savings and also enhances user experience.
@@ -314,6 +319,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/FordFulkerson.gif?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[9]<br>
 </p>  
 
 **Market Benefits**: Improved Service Quality and customer retention.
@@ -431,6 +437,7 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 <p align="center">
   <img src="https://github.com/omkar3060/omkar3060.github.io/blob/main/assets/1_l4PzubjhoUxhzTTzHaDB-g.jpg?raw=true" style="width: 400px; height: auto;"  alt="OLA">
+  <br>[10]<br>
 </p>  
 
 [Here is my code for Bloom filter](https://github.com/omkar3060/omkar3060.github.io/blob/main/codes/bloom_filter.cpp){:target="_blank"}<br>
@@ -457,7 +464,19 @@ The ever-evolving landscape of ride-hailing services necessitates continual impr
 
 [3] Saurabh Kumar, "Bellman-Ford Algorithm", Ideserve, https://brilliant.org/wiki/dijkstras-short-path-finder/
 
+[4] François Aubry, "Graphs - Topological sort",INGInious, https://inginious.org/course/competitive-programming/graphs-toposort
 
+[5] Artyom Kalinin, "File:Skip list add element.gif",Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Skip_list_add_element.gif
+
+[6] Eeppeliteloop, "File:Huffman huff demo.gif",Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Huffman_huff_demo.gif
+
+[7] Sebastian De Lima, "A quick explanation of DFS & BFS (Depth First Search & Breadth-First Search)", Medium, https://medium.com/analytics-vidhya/a-quick-explanation-of-dfs-bfs-depth-first-search-breadth-first-search-b9ef4caf952c
+
+[8] flyguy67, "Traveling Salesman Problem Visualization", Make A GIF, https://makeagif.com/gif/traveling-salesman-problem-visualization-UZrVqj
+
+[9] Xav65, "File:FordFulkerson.gif", Wikimedia Commons, https://commons.wikimedia.org/wiki/File:FordFulkerson.gif
+
+[10] Lucky Sharma, "BloomFilter in SearchEngine (Solr)", Medium, https://mightguy.medium.com/bloomfilter-in-searchengine-part-i-2f34814894b9
 
 
 
